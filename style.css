@@ -163,3 +163,74 @@ body {overflow-x: hidden;}
     width: 20%; height: 100%;
     background: var(--cor02);
 }
+/*Video*/
+
+.video {
+    width: 100vw; height: 60vh;
+    background: turquoise;
+}
+
+.cursos {
+    width: 100vw; height: 100vh;
+    background: var(--cor03);
+    padding: 2.5rem 5rem;
+    display: flex; flex-direction: column;
+}
+.cabecalho-curso {
+    display: flex; justify-content: space-between; align-items: center;
+}
+.cabecalho-curso h1 {font-family: var(--font-padrao); color: var(--cor05); font-size: 2.5rem;}
+
+#link {
+    display: flex; gap: 1rem;
+}
+
+.cabecalho-curso a {
+    text-decoration: none;
+    color: var(--cor03); background: var(--cor02);
+    font-size: 1.5rem; font-family: var(--font-padrao);
+    padding: .2rem .6rem; border-radius: 8px;
+}
+
+.conteiner-conteudo {
+    display: flex; align-items: center; justify-content: center;
+    width: 100%;
+
+}
+
+.conteudo-curso {
+    max-width: 1000px;
+    margin-top: 2rem;
+    display: grid; justify-content: space-around;
+    grid-gap: 1.5rem 2rem;
+    grid-template-areas: 
+    "item item item"
+    "item item item"
+    ;  
+}
+
+.item {
+    padding: 1rem;
+    height: 200px; width: 200px;
+    grid-area: "item";
+    background: var(--cor02);
+    display: flex; flex-direction: column;
+    align-items: center; border-radius: 5px;
+}
+.item h2 {
+    font-family: var(--font-padrao); color: var(--cor03);
+    margin-bottom: 2rem;
+}
+.item a {
+    text-decoration: none; font-family: var(--font-padrao); color: var(--cor02);
+    background: var(--cor03); padding: .2rem .6rem; border-radius: 5px;
+}
+.infor-cursos {
+    margin-top: 2rem;
+    font-family: var(--font-padrao); color: var(--cor05); font-size: 1.4rem;
+    display: flex; justify-content: center;
+}
+
+.feedback {
+    width: 100vw; height: 40vh;
+}
