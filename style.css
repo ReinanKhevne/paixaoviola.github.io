@@ -110,6 +110,7 @@ body {overflow-x: hidden;}
 .conteiner-texto-imagem {
     display: flex;
     height: 60%;
+    margin-bottom: 2rem;
 }
 
 .texto {
@@ -118,6 +119,7 @@ body {overflow-x: hidden;}
     padding: 0 1.5rem;
     font-size: 1.2rem;
     color: var(--cor02); font-family: var(--font-padrao);
+    position: relative;
 }
 
 .imagem {
