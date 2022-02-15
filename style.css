@@ -1,0 +1,163 @@
+@import url(https://fonts.googleapis.com/css?family=Amaranth:regular,italic,700,700italic);
+
+:root {
+    --cor01: #BF7636;
+    --cor02: #F2B988;
+    --cor03: #40291C;
+    --cor04: #8C5845;
+    --cor05: #D9C1BF;
+    --cor06: #ffffff;
+
+    --font-padrao: 'Amaranth', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {overflow-x: hidden;}
+
+.header {
+    height: 130px;
+    background: var(--cor01);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 3rem;
+}
+.header a {
+    text-decoration: none;
+    list-style: none;
+    font-family: var(--font-padrao);
+    color: var(--cor03);
+}
+
+.logo {font-size: 2rem;}
+
+.menu {
+    display: flex;
+    gap: .7rem;
+    font-size: 1.4rem;
+}
+
+#bnt-mobile {
+    display: none;
+    color: var(--cor03);
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/*Responsividade do botão mobile*/
+
+@media screen and (max-width: 678px) {
+    .menu {
+        display: none;
+    }
+    #bnt-mobile {
+        display: block;
+    }
+}
+
+.faixa-header {
+    height: 35px;
+    background-color: var(--cor03);
+    display: flex; justify-content: flex-end; align-items: center;
+    padding: 0 3rem;
+    gap: 5rem;
+}
+
+#busca {
+    border-radius: 5px;
+    border: 0; padding: .2rem;
+    background: var(--cor05);
+}
+
+.sociais-header {
+    color: var(--cor05);
+    display: flex;
+    gap: 1rem; font-size: 1.3rem;
+}
+
+/*Carrossel de imagens*/
+
+#carrossel {
+    height: 80vh;
+    background-color: var(--cor06);
+    display: flex; justify-content: center; align-items: center;
+}
+
+.imagens-carrossel {
+    background-image: url(https://images.pexels.com/photos/3423985/pexels-photo-3423985.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position: center bottom;
+    background-size: cover;
+    width: 80%; height: 80%;
+
+}
+/*Sobre*/
+
+.sobre {
+    width: 100vw; height: 100vh;
+    background: var(--cor03);
+    display: flex; flex-direction: column;
+    padding: 2rem 4rem;
+}
+
+.titulo {
+    font-family: var(--font-padrao); font-size: 1.5rem;
+    color: var(--cor05);
+}
+
+.conteiner-texto-imagem {
+    display: flex;
+    height: 60%;
+}
+
+.texto {
+    height: 100%; width: 50%;
+    display: flex; align-items: center;
+    padding: 0 1.5rem;
+    font-size: 1.2rem;
+    color: var(--cor02); font-family: var(--font-padrao);
+}
+
+.imagem {
+    height: 100%; width: 50%;
+    position: relative;
+    padding-left: 2rem;
+}
+
+#fundo {
+    background: var(--cor04);
+    width: 70%; height: 80%;
+}
+#imagem {
+    background-image: url(https://images.unsplash.com/photo-1608068071962-63140de5de69?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fG11c2ljYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+    background-position: center center;
+    background-size: cover;
+    width: 70%; height: 80%;
+    position: absolute;
+    top: 10%; right: 18%;
+    margin-bottom: 3rem;
+}
+
+.modelo {
+    height: 30%;
+    display: flex; align-items: center; justify-content: center;
+    gap: 1.5rem;
+}
+
+#popular {
+    width: 20%; height: 100%;
+    background-color: var(--cor02);
+}
+
+#linha {
+    width: 10%; height: 10px;
+    background-color: var(--cor02);
+    border-radius: 10px; border: 0;
+}
+
+#classico {
+    width: 20%; height: 100%;
+    background: var(--cor02);
+}
