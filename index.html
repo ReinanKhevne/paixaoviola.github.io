@@ -23,10 +23,10 @@
             </div>
 
             <ul class="menu">
-                <a href="#"><li>Sobre</li></a>
-                <a href="#"><li>Cursos</li></a>
-                <a href="#"><li>Feedback</li></a>
-                <a href="#"><li>Contato</li></a>
+                <a href="index.html"><li>Sobre</li></a>
+                <a href="cursos.html"><li>Cursos</li></a>
+                <a href="index.html"><li>Feedback</li></a>
+                <a href="index.html"><li>Contato</li></a>
             </ul>
 
         </nav>
@@ -63,7 +63,7 @@
             <div class="texto">
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit incidunt eaque inventore eos reiciendis magni corporis explicabo nostrum minus quae reprehenderit officia at, beatae, minima amet placeat delectus ut. Molestias?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe explicabo maiores doloremque! Debitis reiciendis quis fugiat facilis, sit suscipit praesentium laudantium culpa, optio aut ex voluptatem sed sapiente eos neque!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe explicabo maiores doloremque! 
                 </p>
             </div>
 
@@ -76,9 +76,13 @@
         </div>
 
         <div class="modelo">
-            <div id="popular"></div>
-            <hr id="linha">
-            <div id="classico"></div>
+            <div id="popular">
+                <h2>Popular</h2>
+            </div>
+
+            <div id="classico">
+                <h2>Clássico</h2>
+            </div>
         </div>
 
     </section>
@@ -87,58 +91,59 @@
 
     </section>
 
-    <section class="cursos">
-
-        <div class="cabecalho-curso">
-            <h1>Cursos</h1>
-            <div id="link">
-                <a href="#">Contato</a>
-                <a href="#">Matricule-se</a>
-            </div>
+    <section class="feedback-difereciais">
+        
+        <div class="diferencial">
+            <h1>Por que estudar no Paixão Viola?</h1>
+            <img src="#" alt="image">
         </div>
 
-        <div class="conteiner-conteudo">
-
-            <div class="conteudo-curso">
-                <div class="item">
-                    <h2>Violão popular</h2>
-                    <a href="#">Conferir</a>
-                </div>
-                <div class="item">
-                    <h2>Violão Clássico</h2>
-                    <a href="#">Conferir</a>
-                </div>
-                <div class="item">
-                    <h2>Fingerstyle</h2>
-                    <a href="#">Conferir</a>
-                </div>
-                <div class="item">
-                    <h2>Viola Caipira</h2>
-                    <a href="#">Conferir</a>
-                </div>
-                <div class="item">
-                    <h2>Ukulelê</h2>
-                    <a href="#">Conferir</a>
-                </div>
-                <div class="item">
-                    <h2>Viola Clássica</h2>
-                    <a href="#">Conferir</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="infor-cursos">
-            <p>
-                Lorem ipsum dolor sit amet. 
-                Hic minima obcaecati est consequatur soluta ut labore odit.
-            </p>
+        <div class="feedback">
+            <h1>O que os alunos dizem</h1>
         </div>
 
     </section>
 
-    <section class="feedback">
+    <section class="contato">
+        
+        <h1 id="contato-titulo">Contato</h1>
+        <div class="cima">
+            <div class="conteiner-form">
+            
+                <form action="" class="form">
+                    <input type="text" name="nome" id="nome" placeholder="Nome completo" required>
+                    <input type="email" name="email" id="email" placeholder="E-mail válido" required>
+                    <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Envie-nos uma mensagem..." required></textarea>
+                    <input type="button" value="Enviar" id="botao">
+                </form>
+            </div>
+        </div>
+
+        <div class="baixo">
+            <span>
+                <strong>Telefones</strong>: <br>
+                Pessoa Física: (77) xxxx-xxxx <br>
+                Pessoa Jurídica: (77) YYYY-YYY <br>
+                (segunda a sexta, das 8h as 17h)
+            </span>
+        </div>
 
     </section>
+
+    <footer class="footer">
+
+        <div class="midias">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+
+        <div id="creditos">
+            Photos by <strong>UnsPlash</strong>
+        </div>
+
+    </footer>
 
 </body>
 </html>

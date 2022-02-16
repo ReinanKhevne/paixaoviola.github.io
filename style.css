@@ -16,7 +16,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+#body-cursos {overflow-x: hidden;}
 body {overflow-x: hidden;}
 
 .header {
@@ -99,12 +99,12 @@ body {overflow-x: hidden;}
     width: 100vw; height: 100vh;
     background: var(--cor03);
     display: flex; flex-direction: column;
-    padding: 2rem 4rem;
+    padding-bottom: 2rem;
 }
 
 .titulo {
     font-family: var(--font-padrao); font-size: 1.5rem;
-    color: var(--cor05);
+    color: var(--cor05); margin: 2rem 0 0 2rem;
 }
 
 .conteiner-texto-imagem {
@@ -117,7 +117,7 @@ body {overflow-x: hidden;}
     height: 100%; width: 50%;
     display: flex; align-items: center;
     padding: 0 1.5rem;
-    font-size: 1.2rem;
+    font-size: 1.2rem; 
     color: var(--cor02); font-family: var(--font-padrao);
     position: relative;
 }
@@ -149,20 +149,32 @@ body {overflow-x: hidden;}
 }
 
 #popular {
-    width: 20%; height: 100%;
+    width: 30%; height: 100%; border-radius: 12px;
     background-color: var(--cor02);
+    display: flex; align-items: center; justify-content: center;
 }
-
-#linha {
-    width: 10%; height: 10px;
-    background-color: var(--cor02);
-    border-radius: 10px; border: 0;
+#popular h2 {
+    font-family: var(--font-padrao); font-size: 1.8rem; color: var(--cor03);
 }
 
 #classico {
-    width: 20%; height: 100%;
+    width: 30%; height: 100%; border-radius: 12px;
     background: var(--cor02);
+    display: flex; align-items: center; justify-content: center;
 }
+#classico h2 {
+    font-family: var(--font-padrao); font-size: 1.8rem; color: var(--cor03);
+}
+
+@media screen and (max-width: 970px) {
+    .imagem {
+        display: none;
+    }
+    .texto {
+        width: 100%;
+    }
+}
+
 /*Video*/
 
 .video {
@@ -170,19 +182,25 @@ body {overflow-x: hidden;}
     background: turquoise;
 }
 
+/*Cursos*/
+
+#color-faixa-cursos {
+    background: var(--cor04);
+}
 .cursos {
-    width: 100vw; height: 100vh;
+    width: 100vw; height: 100%;
     background: var(--cor03);
-    padding: 2.5rem 5rem;
+    padding: 2.5rem 0rem 1.5rem 0rem;
     display: flex; flex-direction: column;
 }
 .cabecalho-curso {
     display: flex; justify-content: space-between; align-items: center;
 }
-.cabecalho-curso h1 {font-family: var(--font-padrao); color: var(--cor05); font-size: 2.5rem;}
+.cabecalho-curso h1 {font-family: var(--font-padrao); color: var(--cor05); font-size: 2.5rem;
+padding-left: 3rem;}
 
 #link {
-    display: flex; gap: 1rem;
+    display: flex; gap: 1rem; padding-right: 3rem;
 }
 
 .cabecalho-curso a {
@@ -199,6 +217,7 @@ body {overflow-x: hidden;}
 }
 
 .conteudo-curso {
+    padding: 3rem 0 0 0;
     max-width: 1000px;
     margin-top: 2rem;
     display: grid; justify-content: space-around;
@@ -211,7 +230,10 @@ body {overflow-x: hidden;}
 
 .item {
     padding: 1rem;
-    height: 200px; width: 200px;
+    height: 200px;
+    width: 300px;
+    max-width: 300px;
+    min-width: 150px;
     grid-area: "item";
     background: var(--cor02);
     display: flex; flex-direction: column;
@@ -228,9 +250,176 @@ body {overflow-x: hidden;}
 .infor-cursos {
     margin-top: 2rem;
     font-family: var(--font-padrao); color: var(--cor05); font-size: 1.4rem;
-    display: flex; justify-content: center;
+    display: flex; justify-content: center; text-align: center; 
+}
+/*responsividade cursos*/
+@media screen and (max-width:1035px) {
+    .conteudo-curso {
+        grid-template-areas: 
+        "item item"
+        "item item"
+        "item item"
+        ; 
+    }
+}
+@media screen and (max-width:690px) {
+    .conteudo-curso {
+        grid-template-areas: 
+        "item"
+        "item"
+        "item"
+        "item"
+        "item"
+        "item"
+        ; 
+    }
+    #link {padding: 0; margin-top: 1rem;}
+    #link a {
+        font-size: 1.2rem;
+    }
+    .cabecalho-curso {flex-direction: column; align-items: center;}
+    .cabecalho-curso h1 {font-size: 2rem; padding: 0;}
+    .infor-cursos {padding: 0 3rem;}
+    .faixa-header {gap: 3rem;} #busca {width: 8rem; height: 25px;}
 }
 
+/*feedback-difereciais*/
+
+.feedback-difereciais {
+    width: 100vw; height: 100vh;
+}
+
+/*diferencial*/
+
+.diferencial {
+    width: 100%; height: 60%;
+    background: var(--cor01);
+}
+.diferencial h1 {
+    text-align: center; padding: 1.5rem 0 0 0;
+    color: var(--cor03); font-family: var(--font-padrao); font-size: 1.8rem;
+}
+
+/*feedback*/
+
 .feedback {
-    width: 100vw; height: 40vh;
+    width: 100%; height: 40%;
+    background: var(--cor05);
+}
+.feedback h1 {
+    text-align: center; padding: 1.5rem 0 0 0;
+    color: var(--cor04); font-family: var(--font-padrao); font-size: 1.8rem;
+}
+
+/*Contato*/
+
+.contato {
+    width: 100vw; height: 80vh;
+    background: var(--cor03);
+    display: flex; justify-content: space-around; flex-direction: row;
+    align-items: center; position: relative;
+}
+#contato-titulo {
+    position: absolute; top: 2rem; left: 3rem;
+    font-family: var(--font-padrao); font-size: 2.5rem; color: var(--cor05);
+}
+
+.cima {
+    height: 60%; width: 60%;
+    display: flex; flex-direction: column;
+}
+
+.conteiner-form {
+    width: 100%; height: 100%;
+}
+
+.form {
+    display: flex; flex-direction: column;
+    align-items: flex-start; justify-content: center;
+    width: 100%; height: 100%;
+    margin-left: 6rem;
+}
+.form ::placeholder { color: var(--cor02); }
+
+#nome {
+    border: 3px solid var(--cor05); 
+    border-radius: 5px;
+    width: 70%; height: 3rem; padding: .2rem .4rem;
+    font-family: Arial, Helvetica, sans-serif; font-size: 1.1rem; margin-bottom: 1.5rem;
+    background: none; color: var(--cor02);
+}
+
+#email {
+    border: 3px solid var(--cor05);  
+    border-radius: 5px;
+    width: 70%; height: 3rem; padding: .2rem .4rem;
+    font-family: Arial, Helvetica, sans-serif; font-size: 1.1rem; margin-bottom: 1.5rem;
+    background: none;
+    
+}
+
+#msg {
+    border: 3px solid var(--cor05); 
+    border-radius: 5px;
+    width: 70%; height: 6rem; padding: .2rem .4rem;
+    font-family: Arial, Helvetica, sans-serif; font-size: 1.1rem; margin-bottom: 1.5rem;
+    background: none;
+}
+#botao {
+    border: 0; border-radius: 5px;
+    padding: .3rem .8rem; font-weight: bold; cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif; font-size: 1.3rem;
+    background: var(--cor02); color: var(--cor03);
+    
+}
+
+
+.baixo {
+    width: 40%; height: 60%;
+    display: flex; flex-direction: column;
+    align-items: flex-end; justify-content: center; padding-right: 5rem;
+}
+.baixo span {
+    font-family: var(--font-padrao); color: var(--cor05);
+    font-size: 1.5rem; text-align: center;
+}
+
+@media screen and (max-width: 718px) {
+    .contato {
+        flex-direction: column;
+    }
+    #nome, #email, #msg {
+        width: 100%;
+    }
+    .form {
+        margin: 0; 
+    }
+    .baixo {
+        flex-direction: row;
+        width: 100%; height: 20%; padding: 0;
+    }
+    .baixo span {
+        font-size: 1rem;
+    }
+    .conteiner-form {margin-top: 4.5rem;}
+    
+    .footer {
+        flex-direction: column;
+    }
+}
+
+.footer {
+    width: 100vw; height: 25vh;
+    background-color: var(--cor02); color: var(--cor03);
+    display: flex; align-items: center; justify-content: space-around;
+}
+
+.midias {
+    display: flex;
+    gap: 1rem; font-size: 1.5rem;
+}
+
+#creditos {
+    font-family: var(--font-padrao);
+    font-size: 1.2rem;
 }
