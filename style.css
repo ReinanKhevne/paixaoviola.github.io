@@ -348,14 +348,21 @@ padding-left: 3rem;}
     font-family: Arial, Helvetica, sans-serif; font-size: 1.1rem; margin-bottom: 1.5rem;
     background: none; color: var(--cor02);
 }
+#nome:focus {
+    border: 2px solid var(--cor02);
+    outline: 0;
+}
 
 #email {
     border: 3px solid var(--cor05);  
     border-radius: 5px;
     width: 70%; height: 3rem; padding: .2rem .4rem;
     font-family: Arial, Helvetica, sans-serif; font-size: 1.1rem; margin-bottom: 1.5rem;
-    background: none;
-    
+    background: none; color: var(--cor02); 
+}
+#email:focus {
+    border: 2px solid var(--cor02);
+    outline: 0;
 }
 
 #msg {
@@ -363,8 +370,13 @@ padding-left: 3rem;}
     border-radius: 5px;
     width: 70%; height: 6rem; padding: .2rem .4rem;
     font-family: Arial, Helvetica, sans-serif; font-size: 1.1rem; margin-bottom: 1.5rem;
-    background: none;
+    background: none; color: var(--cor02);
 }
+#msg:focus {
+    border: 2px solid var(--cor02);
+    outline: 0;
+}
+
 #botao {
     border: 0; border-radius: 5px;
     padding: .3rem .8rem; font-weight: bold; cursor: pointer;
