@@ -427,9 +427,10 @@ padding-left: 3rem;}
 }
 
 .midias {
-    display: flex;
+    display: flex; 
     gap: 1rem; font-size: 1.5rem;
 }
+.midias i { cursor: pointer; }
 
 #creditos {
     font-family: var(--font-padrao);
