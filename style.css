@@ -162,20 +162,21 @@ body {overflow-x: hidden;}
 
 #popular {
     width: 30%; height: 100%; border-radius: 12px;
-    background-color: var(--cor02);
+    border: 4px solid var(--cor02);
     display: flex; align-items: center; justify-content: center;
 }
+
 #popular h2 {
-    font-family: var(--font-padrao); font-size: 1.8rem; color: var(--cor03);
+    font-family: var(--font-padrao); font-size: 1.8rem; color: var(--cor02);
 }
 
 #classico {
     width: 30%; height: 100%; border-radius: 12px;
-    background: var(--cor02);
+    border: 4px solid var(--cor02);
     display: flex; align-items: center; justify-content: center;
 }
 #classico h2 {
-    font-family: var(--font-padrao); font-size: 1.8rem; color: var(--cor03);
+    font-family: var(--font-padrao); font-size: 1.8rem; color: var(--cor02);
 }
 
 @media screen and (max-width: 970px) {
@@ -202,9 +203,10 @@ body {overflow-x: hidden;}
     z-index: -100; height: 100%;
 }
 
-.image-conteiner .content {
+.content p {
     font-family: var(--font-padrao); font-size: 1.4rem;
     color: var(--cor06); text-align: center;
+    padding: 0 2rem;
 }
 
 /*Cursos*/
