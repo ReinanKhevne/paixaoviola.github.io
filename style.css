@@ -100,12 +100,12 @@ body {overflow-x: hidden;}
 }
 
 .imagens-carrossel {
-    background-image: url(https://images.pexels.com/photos/3423985/pexels-photo-3423985.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-    background-position: center bottom;
-    background-size: cover;
-    width: 80%; height: 80%;
-
+   display: flex; justify-content: center; align-items: center;
 }
+#primeiro {
+    width: 850px; height: 450px;
+}
+
 /*Sobre*/
 
 .sobre {
@@ -321,7 +321,7 @@ padding-left: 3rem;}
 
 .competencias {
     width: 100%; height: 60%;
-    position: relative; background: #9651414f;
+    position: relative; background: #96514146;
 }
 .competencias h1 {
     text-align: center; padding: 1.5rem 0 0 0;
