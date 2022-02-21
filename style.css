@@ -195,26 +195,22 @@ body {overflow-x: hidden;}
         width: 100%;
     }
 }
-
-/*imagem Parallax*/
+/*imagem conteiner*/
 
 .image-conteiner {
-    width: 100vw; height: 60vh;
+    width: 100vw; height: 50vh;
     overflow: hidden;
     display: flex; justify-content: center; align-items: center;
+    background-image: url(https://images.pexels.com/photos/685458/pexels-photo-685458.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position: center center; background-size: cover;
+    box-shadow: inset 1px 1px 14px 7px #0000005e;
 }
 
-.image-conteiner img {
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; object-fit: cover;
-    z-index: -100; height: 100%;
-}
 
 .content p {
-    font-family: var(--font-padrao); font-size: 1.4rem;
+    font-family: var(--font-padrao); font-size: 1.5rem;
     color: var(--cor06); text-align: center;
-    padding: 0 2rem;
+    padding: 0 3rem;
 }
 
 /*Cursos*/
@@ -321,14 +317,23 @@ padding-left: 3rem;}
 /*feedback-difereciais*/
 
 .feedback-difereciais {
-    width: 100vw; height: 100vh;
+    width: 100vw; height: 70vh;
+    position: relative;
+}
+
+.feedback-difereciais img {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; object-fit: cover;
+    z-index: -100; height: 100%;
 }
 
 /*diferencial*/
 
 .competencias {
-    width: 100%; height: 60%;
+    width: 100%; height: 100%;
     position: relative; background: #96514146;
+
 }
 .competencias h1 {
     text-align: center; padding: 1.5rem 0 0 0;
