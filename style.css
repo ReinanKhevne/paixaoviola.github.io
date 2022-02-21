@@ -543,3 +543,7 @@ padding-left: 3rem;}
     font-family: var(--font-padrao);
     font-size: 1.2rem;
 }
+
+@media screen and (max-width: 780px) {
+    #creditos {display: none;}
+}
