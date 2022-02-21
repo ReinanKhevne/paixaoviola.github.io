@@ -95,23 +95,45 @@ body {overflow-x: hidden;}
 
 #carrossel {
     height: 80vh; width: 100vw;
-    background-color: var(--cor06);
-    display: flex; justify-content: center; align-items: center;
-    position: relative;
+    background: var(--cor06);
+    display: flex; justify-content: center;
 }
 
-.imagens-carrossel {
-   display: flex; justify-content: center; align-items: center;
-}
-
-.imagens-carrossel img {
-    width: 850px; height: 450px;
-    position: absolute; top: 1%;
-    width: 80%; height: 95%;
-    object-fit: cover;
+.conteiner-imagens {
+    margin: 1rem auto;
+    width: 1000px; height: 450px;
+    overflow: hidden;
     border-radius: 200px 0px 100px 0px;
+    box-shadow: 10px 8px 12px #00000083;
 }
 
+.conteiner-imagens img {
+    width: 1000px; height: 450px;
+}
+
+.conteiner-imagens ul {
+    list-style: none;
+    display: flex;
+    width: 1200px; height: 450px;
+}
+
+.conteiner-imagens li {
+    position: relative;
+    animation: slide 15s infinite ease-out;
+}
+
+@keyframes slide {
+    0% {left: 0px}
+    20%{left: 0px}
+
+    30% {left: -1000px}
+    50% {left: -1000px}
+
+    60% {left: -2000px}
+    90% {left: -2000px}
+
+    100% {left: 0px}
+}
 
 /*Sobre*/
 
