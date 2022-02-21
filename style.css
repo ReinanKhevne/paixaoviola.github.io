@@ -544,6 +544,6 @@ padding-left: 3rem;}
     font-size: 1.2rem;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 900px) {
     #creditos {display: none;}
 }
