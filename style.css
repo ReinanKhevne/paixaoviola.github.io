@@ -97,6 +97,7 @@ body {overflow-x: hidden;}
     height: 80vh; width: 100vw;
     background: var(--cor06);
     display: flex; justify-content: center;
+    padding: 0 1.5rem;
 }
 
 .conteiner-imagens {
@@ -133,6 +134,13 @@ body {overflow-x: hidden;}
     90% {left: -2000px}
 
     100% {left: 0px}
+}
+
+@media screen and (max-width: 780px) {
+    #carrossel {
+        display: none;
+    }
+    .faixa-header {background: var(--cor07);}
 }
 
 /*Sobre*/
@@ -173,6 +181,7 @@ body {overflow-x: hidden;}
 #fundo {
     background: var(--cor04);
     width: 70%; height: 80%;
+    border-radius: 15px 0px;
 }
 #imagem {
     background-image: url(https://images.unsplash.com/photo-1608068071962-63140de5de69?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fG11c2ljYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
@@ -181,32 +190,7 @@ body {overflow-x: hidden;}
     width: 70%; height: 80%;
     position: absolute;
     top: 10%; right: 18%;
-    margin-bottom: 3rem;
-}
-
-.modelo {
-    height: 30%;
-    display: flex; align-items: center; justify-content: center;
-    gap: 1.5rem;
-}
-
-#popular {
-    width: 30%; height: 100%; border-radius: 12px;
-    border: 4px solid var(--cor02);
-    display: flex; align-items: center; justify-content: center;
-}
-
-#popular h2 {
-    font-family: var(--font-padrao); font-size: 1.8rem; color: var(--cor02);
-}
-
-#classico {
-    width: 30%; height: 100%; border-radius: 12px;
-    border: 4px solid var(--cor02);
-    display: flex; align-items: center; justify-content: center;
-}
-#classico h2 {
-    font-family: var(--font-padrao); font-size: 1.8rem; color: var(--cor02);
+    margin-bottom: 3rem; border-radius: 15px 0px 15px 0px;
 }
 
 @media screen and (max-width: 970px) {
@@ -217,6 +201,21 @@ body {overflow-x: hidden;}
         width: 100%;
     }
 }
+
+@media screen and (max-width: 780px) {
+    .modelo {display: none;}
+
+    .conteiner-texto-imagem {
+        flex-direction: column; height: 100%;
+    }
+
+    .imagem {
+        display: block; width: 100%; height: 100%;
+        margin-top: 2rem;
+    }
+    .texto {text-align: center; padding: 0 1rem;}
+}
+
 /*imagem conteiner*/
 
 .image-conteiner {
@@ -395,10 +394,28 @@ padding-left: 3rem;}
     align-items: center;
 }
 
+@media screen and (max-width: 780px) {
+    .feedback-difereciais {
+        height: 100vh; 
+    }
+    .competencias-elementos {
+        flex-direction: column;
+    }
+    #didatica, #aprendizado, #apoio {
+        width: 100%; 
+    }
+    .competencias-elementos i {
+        font-size: 2rem;
+    }
+    .competencias-elementos p {
+        font-size: 1rem; padding: 0 2rem;
+    }
+}
+
 /*feedback*/
 
 .feedback {
-    width: 100vw; height: 40vh;
+    width: 100vw; height: 50vh;
     background: var(--cor05);
 }
 .feedback h1 {
@@ -414,13 +431,9 @@ padding-left: 3rem;}
     display: flex; justify-content: space-around; flex-direction: row;
     align-items: center; position: relative;
 }
-#contato-titulo {
-    position: absolute; top: 2rem; left: 3rem;
-    font-family: var(--font-padrao); font-size: 2.5rem; color: var(--cor05);
-}
 
 .cima {
-    height: 60%; width: 60%;
+    height: 7   0%; width: 60%;
     display: flex; flex-direction: column;
 }
 
@@ -434,7 +447,13 @@ padding-left: 3rem;}
     width: 100%; height: 100%;
     margin-left: 6rem;
 }
-.form ::placeholder { color: var(--cor02); }
+
+#contato-titulo {
+    font-family: var(--font-padrao); font-size: 2.5rem;
+    padding-bottom: .6rem; color: var(--cor05);
+}
+
+.form ::placeholder { color: var(--cor02);}
 
 #nome {
     border: 3px solid var(--cor05); 
