@@ -210,6 +210,7 @@ body {overflow-x: hidden;}
     background: var(--cor04);
     width: 70%; height: 80%;
     border-radius: 15px 0px;
+    box-shadow: 8px 9px 15px 0px #0000005e;
 }
 #imagem {
     background-image: url(https://images.unsplash.com/photo-1608068071962-63140de5de69?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fG11c2ljYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
@@ -219,6 +220,7 @@ body {overflow-x: hidden;}
     position: absolute;
     top: 10%; right: 18%;
     margin-bottom: 3rem; border-radius: 15px 0px 15px 0px;
+    box-shadow: 8px 9px 15px 0px #0000005e;
 }
 
 @media screen and (max-width: 970px) {
@@ -262,8 +264,9 @@ body {overflow-x: hidden;}
     width: 100vw; height: 50vh;
     overflow: hidden;
     display: flex; justify-content: center; align-items: center;
-    background-image: url(https://images.pexels.com/photos/8044059/pexels-photo-8044059.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-    background-position: center center; background-size: cover; 
+    background-image: url(https://images.pexels.com/photos/3672313/pexels-photo-3672313.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position: bottom center; background-size: cover;
+    box-shadow:  0px 0px 16px 10px #0000004f;
 }
 
 
@@ -343,6 +346,59 @@ padding-left: 3rem;}
     font-family: var(--font-padrao); color: var(--cor05); font-size: 1.4rem;
     display: flex; justify-content: center; text-align: center; 
 }
+
+/*planos*/
+
+.conteiner-planos {
+    width: 100vw; height: 100vh; background: var(--cor05);
+    border-top: 6px solid var(--cor01);
+    display: flex; flex-direction: column; align-items: center;
+    padding: 2rem;
+}
+.conteiner-planos h1 {
+    font-family: var(--font-padrao); font-size: 2.5rem; color: var(--cor04);
+    margin-bottom: 3rem;
+}
+.conteiner-planos p {
+    font-family: var(--font-padrao); font-size: 1.2rem; color: var(--cor03);
+}
+
+.planos { 
+    width: 100%; height: 70%;
+    display: flex; align-items: center; justify-content: center;
+    gap: 10rem; margin-bottom: 2.5rem;
+}
+.pec {
+    background-image: linear-gradient(to top, #40291C, #965141);
+    width: 28%; height: 90%;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    border-radius: 40px 10px 30px 10px; gap: .4rem;
+}
+.pec h2 {
+    font-family: var(--font-padrao); font-size: 1.8rem; 
+    color: var(--cor06);
+}
+.pec p {
+    color: var(--cor06); font-family: var(--font-padrao); font-size: 4rem;
+    font-weight: bold; 
+}
+.pec span {
+    color: var(--cor06); font-family: var(--font-padrao); font-size: 2rem;
+}
+#total1 {
+    color: var(--cor05); font-family: Arial, Helvetica, sans-serif; font-size: 1.2rem;
+}
+#total2 {
+    color: var(--cor05); font-family: Arial, Helvetica, sans-serif; font-size: 1.2rem;
+}
+
+.pec a {
+    background: var(--cor06); border-radius: 10px;
+    font-family: var(--font-padrao); font-size: 2.5rem;
+    text-decoration: none; color: var(--cor07); padding: .3rem 1rem;
+    outline: 0;
+}
+
 /*responsividade cursos*/
 @media screen and (max-width:1035px) {
     .conteudo-curso {
