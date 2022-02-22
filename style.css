@@ -71,7 +71,7 @@ body {overflow-x: hidden;}
     }
     .nav.active .menu {
         display: block;
-        height: 70vh; visibility: visible;
+        height: 78vh; visibility: visible;
     }
     .nav.active body {
         
@@ -279,7 +279,7 @@ body {overflow-x: hidden;}
 /*Cursos*/
 
 #color-faixa-cursos {
-    background: var(--cor04);
+    background: var(--cor07);
 }
 .cursos {
     width: 100vw; height: 100%;
