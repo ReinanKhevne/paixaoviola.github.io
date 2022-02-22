@@ -187,7 +187,7 @@ body {overflow-x: hidden;}
 
 .conteiner-texto-imagem {
     display: flex;
-    height: 60%;
+    height: 100%;
     margin-bottom: 2rem;
 }
 
