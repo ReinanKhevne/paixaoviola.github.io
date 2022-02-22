@@ -430,6 +430,33 @@ padding-left: 3rem;}
     .faixa-header {gap: 3rem;} #busca {width: 8rem; height: 25px;}
 }
 
+/*responsividade planos*/
+
+@media screen and (max-width: 780px) {
+
+    .planos {
+        margin-bottom: 1.6rem;
+    }
+   .conteiner-planos h1 {
+       text-align: center; font-size: 1.7rem;
+       height: 100vh; margin-bottom: 1.6rem;
+    } 
+    .conteiner-planos p {
+        font-size: 1.1rem; text-align: center;
+    }
+    .planos {
+        flex-direction: column;
+        width: 100%; gap: 1rem;
+    }
+    .pec {
+        width: 100%; height: 40rem;
+    }
+    .pec a {font-size: 2rem;}
+    .pec p {font-size: 2rem;}
+    .pec span {font-size: 1.4rem;}
+}
+
+
 /*feedback-difereciais*/
 
 .feedback-difereciais {
