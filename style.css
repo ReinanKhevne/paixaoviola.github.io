@@ -120,18 +120,21 @@ body {overflow-x: hidden;}
 
 .conteiner-imagens li {
     position: relative;
-    animation: slide 15s infinite ease-out;
+    animation: slide 25s infinite ease-out;
 }
 
 @keyframes slide {
     0% {left: 0px}
-    20%{left: 0px}
+    15%{left: 0px}
 
-    30% {left: -1000px}
-    50% {left: -1000px}
+    25% {left: -1000px}
+    40% {left: -1000px}
 
-    60% {left: -2000px}
-    90% {left: -2000px}
+    50% {left: -2000px}
+    65% {left: -2000px}
+
+    75% {left: -3000px}
+    90% {left: -3000px}
 
     100% {left: 0px}
 }
