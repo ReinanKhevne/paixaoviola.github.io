@@ -578,7 +578,9 @@ padding-left: 3rem;}
 
 /*responsividade feedback*/
 
-
+@media screen and (max-width: 780px) {
+   
+}
 
 /*Contato*/
 
