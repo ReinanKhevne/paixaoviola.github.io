@@ -29,7 +29,14 @@ html {scroll-behavior: smooth;}
     width: 70px; height: 70px; background: #000;
     position: fixed; top: 500px; right: 40px;
     background-color: var(--cor07); color: var(--cor05); border-radius: 18px; font-size: 2rem;
-    display: flex; justify-content: center; align-items: center; z-index: 99999;
+    display: flex; justify-content: center; align-items: center; overflow-x: hidden;
+}
+
+@media (max-width: 678px) {
+    #bnt-fixed {
+        width: 80px; height: 40px;
+        position: fixed; top: 580px; right: 0; border-radius: 18px 0 0 18px;
+    }
 }
 
 
