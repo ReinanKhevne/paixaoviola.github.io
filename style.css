@@ -581,35 +581,40 @@ padding-left: 3rem;}
     gap: 1rem; overflow: hidden;
 }
 
-#s1 {
-    width: 320px; height: 180px; background-image: url(imagens/comentario1.jpg);
-    background-position: center center; background-size: cover; background-repeat: no-repeat;
-    cursor: pointer;
+@media screen and (min-width: 1080px) {
+    #s1 {
+        width: 320px; height: 180px; background-image: url(imagens/comentario1.jpg);
+        background-position: center center; background-size: cover; background-repeat: no-repeat;
+        cursor: pointer;
+    }
+    #s2 {
+        width: 320px; height: 180px; background-image: url(imagens/comentario2.jpg);
+        background-position: center center; background-size: cover; border-radius: 10px;
+        cursor: pointer;
+    }
+    #s3 {
+        width: 320px; height: 180px; background-image: url(imagens/comentario3.jpg);
+        background-position: center center; background-size: cover; border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    #s1, #s2, #s3 {
+        border: 3px solid var(--cor05);
+        transition: transform 0.2s;
+        border-radius: 20px;
+    }
+    #s1:hover  {transform: scale(1.2);}
+    #s2:hover  {transform: scale(1.2);}
+    #s3:hover  {transform: scale(1.2);}
 }
-#s2 {
-    width: 320px; height: 180px; background-image: url(imagens/comentario2.jpg);
-    background-position: center center; background-size: cover; border-radius: 10px;
-    cursor: pointer;
-}
-#s3 {
-    width: 320px; height: 180px; background-image: url(imagens/comentario3.jpg);
-    background-position: center center; background-size: cover; border-radius: 10px;
-    cursor: pointer;
-}
-
-#s1, #s2, #s3 {
-    border: 3px solid var(--cor05);
-    transition: transform 0.2s;
-    border-radius: 20px;
-}
-#s1:hover  {transform: scale(1.2);}
-#s2:hover  {transform: scale(1.2);}
-#s3:hover  {transform: scale(1.2);}
 
 /*responsividade feedback*/
 
-@media screen and (max-width: 780px) {
-   
+@media screen and (max-width: 1080px) {
+    .slide {
+        width: 95%; height: 60%; background-image: url(imagens/comentario2.jpg);
+        background-position: center center; background-size: cover; border-radius: 10px;
+    } 
 }
 
 /*Contato*/
