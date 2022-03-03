@@ -10,7 +10,7 @@
 </head>
 <body>
     
-    <header class="header">
+    <header id="header-top" class="header">
 
         <picture class="logo">
             <a href="index.html"><img src="imagens/logo.png" alt="Logo-header"></a>
@@ -23,9 +23,9 @@
             </div>
 
             <ul class="menu">
-                <a href="index.html"><li>Sobre</li></a>
-                <a href="#"><li>Benefícios</li></a>
-                <a href="index.html"><li>Contato</li></a>
+                <a href="#about-me"><li>Sobre</li></a>
+                <a href="#benefits"><li>Benefícios</li></a>
+                <a href="#contact"><li>Contato</li></a>
                 <a href="cursos.html"><li>Cursos</li></a>
             </ul>
 
@@ -61,7 +61,7 @@
 
     </section>
 
-    <section class="sobre">
+    <section id="about-me" class="sobre">
 
         <div class="titulo">
             <h1>Quem Somos?</h1>
@@ -92,7 +92,7 @@
 
     </section>
 
-    <section class="feedback-difereciais">
+    <section id="benefits" class="feedback-difereciais">
 
         <img src="https://images.pexels.com/photos/2692080/pexels-photo-2692080.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Image fxada">
 
@@ -118,7 +118,7 @@
 
     </section>
 
-    <section class="feedback">
+    <section id="feedback-user" class="feedback">
         <h1>O que os alunos dizem</h1>
         
         <div class="feedback-conteudo">
@@ -138,7 +138,7 @@
 
     </section>
 
-    <section class="contato">
+    <section id="contact" class="contato">
         
         
         <div class="cima">
@@ -176,6 +176,12 @@
         </div>
 
     </footer>
+
+    <a href="#header-top">
+        <div id="bnt-fixed">
+            <i class="fa fa-arrow-up"></i>
+        </div>
+    </a>
 
     <script src="bnt-mobile.js"></script>
     <script src="sliderimagens.js"></script>
